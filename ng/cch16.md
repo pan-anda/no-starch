@@ -31,7 +31,7 @@ kill
 - -15 以正常程序终止工作
 - e.g. kill -9 %2 (预设PID)
 
-离线管理
+#### 16.2.3 离线管理
 - 背景（bash 非系统） → 远端方式离线后，工作不会继续
 - 改用at / nohup (nohangup) 放系统背景
 > - nohup 放前景执行
@@ -48,12 +48,10 @@ ps
 - ps -l(自己bash程序)
 - ps aux(所有系统程序)
 
-
 top   
 - top -d 2   每2s更新（预设5s）
 - top -b -n 2 > ~/abc.txt  (top进行2次，结果传入abc.txt)
 - echo $$ (查看自己bash PID) → top -d 2 -p 2602
-
 
 pstree  程序树 （-p 显示PID）   
 - 所有程序在systmd底下，PID为1，因为是核心呼叫第一个程式。
@@ -63,7 +61,7 @@ pstree  程序树 （-p 显示PID）
 
 
 
-#### 程序执行顺序
+#### 16.3.3 程序执行顺序
 
 
 
